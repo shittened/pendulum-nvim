@@ -57,8 +57,8 @@ local function log_activity(is_active, opts, active_time)
         ft = "unknown_filetype"
     end
     local data = {
-        -- time = vim.fn.strftime("%Y-%m-%d %H:%M:%S"), -- Use local time zone instead
-        time = os.date("!%Y-%m-%d %H:%M:%S"),
+        time = vim.fn.strftime("%Y-%m-%d %H:%M:%S"), -- Use local time zone instead
+        --time = os.date("!%Y-%m-%d %H:%M:%S"),
         active = tostring(is_active),
         -- file = vim.fn.expand("%:t+"), -- only file name
         file = vim.fn.expand("%:p"), -- file name with path
